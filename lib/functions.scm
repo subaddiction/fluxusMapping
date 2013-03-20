@@ -108,12 +108,16 @@
 
 (define mapper (build-plane))
 (with-primitive mapper (hide 1))
-(define decorator (build-torus 1 1.2 16 16))
+(define decorator (build-torus 0.5 1 16 16))
 (with-primitive decorator (hide 1))
 
+(define decorator2 (build-torus 0.5 2 16 16))
+(with-primitive decorator2 (hide 1))
 
-(define (setDecorator customPrimitive)
+
+(define (setDecorator customPrimitive customPrimitive2)
 	(set! decorator customPrimitive)
+	(set! decorator customPrimitive2)
 )
 
 
@@ -131,10 +135,17 @@
 	(colour (vector (* (gh 2) pulseRedLightness) (* (gh 4) pulseGreenLightness) (* (gh 0) pulseBlueLightness)))
 	(draw-instance mapper)
 		(with-state
-		(scale (vector 0.2 0.2 1))
-		(rotate (vector (* 6 (gh 1) pulseRotY) (* 6 (gh 1) pulseRotZ) (* 6 (gh 1) pulseRotX)))
+		(scale (vector (* 0.05 (gh 1)) (* 0.05 (gh 1)) 1))
+		(rotate (vector (* 6 (gh 0) pulseRotY) (* 6 (gh 0) pulseRotZ) (* 6 (gh 0) pulseRotX)))
 		(colour (vector (* (gh 0) pulseRedLightness) (* (gh 2) pulseGreenLightness) (* (gh 4) pulseBlueLightness)))
 		(draw-instance decorator)
+		)
+		
+		(with-state
+		(scale (vector (* 0.05 (gh 0)) (* 0.05 (gh 0)) 1))
+		(rotate (vector (* 6 (gh 1) pulseRotY) (* 6 (gh 1) pulseRotZ) (* 6 (gh 1) pulseRotX)))
+		(colour (vector (* (gh 0) pulseRedLightness) (* (gh 2) pulseGreenLightness) (* (gh 4) pulseBlueLightness)))
+		(draw-instance decorator2)
 		)
 	)
 	
@@ -146,10 +157,17 @@
 	(colour (vector (* (gh 2) pulseRedLightness) (* (gh 4) pulseGreenLightness) (* (gh 0) pulseBlueLightness)))
 	(draw-instance mapper)
 		(with-state
-		(scale (vector 0.2 0.2 1))
-		(rotate (vector (* 6 (gh 1) pulseRotY) (* 6 (gh 1) pulseRotZ) (* 6 (gh 1) pulseRotX)))
+		(scale (vector (* 0.05 (gh 1)) (* 0.05 (gh 1)) 1))
+		(rotate (vector (* 6 (gh 0) pulseRotY) (* 6 (gh 0) pulseRotZ) (* 6 (gh 0) pulseRotX)))
 		(colour (vector (* (gh 0) pulseRedLightness) (* (gh 2) pulseGreenLightness) (* (gh 4) pulseBlueLightness)))
 		(draw-instance decorator)
+		)
+		
+		(with-state
+		(scale (vector (* 0.05 (gh 0)) (* 0.05 (gh 0)) 1))
+		(rotate (vector (* 6 (gh 1) pulseRotY) (* 6 (gh 1) pulseRotZ) (* 6 (gh 1) pulseRotX)))
+		(colour (vector (* (gh 0) pulseRedLightness) (* (gh 2) pulseGreenLightness) (* (gh 4) pulseBlueLightness)))
+		(draw-instance decorator2)
 		)
 	)
 	
@@ -161,10 +179,17 @@
 	(colour (vector (* (gh 2) pulseRedLightness) (* (gh 4) pulseGreenLightness) (* (gh 0) pulseBlueLightness)))
 	(draw-instance mapper)
 		(with-state
-		(scale (vector 0.2 0.2 1))
-		(rotate (vector (* 6 (gh 1) pulseRotY) (* 6 (gh 1) pulseRotZ) (* 6 (gh 1) pulseRotX)))
+		(scale (vector (* 0.05 (gh 1)) (* 0.05 (gh 1)) 1))
+		(rotate (vector (* 6 (gh 0) pulseRotY) (* 6 (gh 0) pulseRotZ) (* 6 (gh 0) pulseRotX)))
 		(colour (vector (* (gh 0) pulseRedLightness) (* (gh 2) pulseGreenLightness) (* (gh 4) pulseBlueLightness)))
 		(draw-instance decorator)
+		)
+		
+		(with-state
+		(scale (vector (* 0.05 (gh 0)) (* 0.05 (gh 0)) 1))
+		(rotate (vector (* 6 (gh 1) pulseRotY) (* 6 (gh 1) pulseRotZ) (* 6 (gh 1) pulseRotX)))
+		(colour (vector (* (gh 0) pulseRedLightness) (* (gh 2) pulseGreenLightness) (* (gh 4) pulseBlueLightness)))
+		(draw-instance decorator2)
 		)
 	)
 	
@@ -176,10 +201,17 @@
 	(colour (vector (* (gh 2) pulseRedLightness) (* (gh 4) pulseGreenLightness) (* (gh 0) pulseBlueLightness)))
 	(draw-instance mapper)
 		(with-state
-		(scale (vector 0.2 0.2 1))
-		(rotate (vector (* 6 (gh 1) pulseRotY) (* 6 (gh 1) pulseRotZ) (* 6 (gh 1) pulseRotX)))
+		(scale (vector (* 0.05 (gh 1)) (* 0.05 (gh 1)) 1))
+		(rotate (vector (* 6 (gh 0) pulseRotY) (* 6 (gh 0) pulseRotZ) (* 6 (gh 0) pulseRotX)))
 		(colour (vector (* (gh 0) pulseRedLightness) (* (gh 2) pulseGreenLightness) (* (gh 4) pulseBlueLightness)))
 		(draw-instance decorator)
+		)
+		
+		(with-state
+		(scale (vector (* 0.05 (gh 0)) (* 0.05 (gh 0)) 1))
+		(rotate (vector (* 6 (gh 1) pulseRotY) (* 6 (gh 1) pulseRotZ) (* 6 (gh 1) pulseRotX)))
+		(colour (vector (* (gh 0) pulseRedLightness) (* (gh 2) pulseGreenLightness) (* (gh 4) pulseBlueLightness)))
+		(draw-instance decorator2)
 		)
 	)
 

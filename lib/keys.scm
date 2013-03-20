@@ -65,10 +65,10 @@
 
 
 ;(when (key-pressed "z") (shapeSchema bgPlane kube smallring bigring))
-(when (key-pressed "z") (setDecorator decorator))
+(when (key-pressed "z") (setDecorator decorator decorator2))
 
 ;(when (key-pressed "x") (shapeSchema bgPlane triangolisphere triA piramidi))
-(when (key-pressed "x") (setDecorator decorator))
+(when (key-pressed "x") (setDecorator decorator decorator2))
 
 ;(when (key-pressed "c") (shapeSchema bgPlane piramidisphere triB triangoli))
 
