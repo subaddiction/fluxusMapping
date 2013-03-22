@@ -4,7 +4,7 @@
 
 
 ; Base directory
-(define base_dir "/home/mrk25/fluxus/fluxusMapping/")
+(define base_dir "/home/mrk25/fluxusMapping/")
 
 ; Include general config
 (load (string-append base_dir "lib/config_linux.scm"))
@@ -16,6 +16,10 @@
 
 ; Include functions
 (load (string-append base_dir "lib/functions.scm"))
+
+
+(set-ortho-zoom 10)
+(ortho)
 
 
 ; Fire animations
