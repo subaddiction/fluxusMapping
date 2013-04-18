@@ -9,17 +9,15 @@
 (with-primitive bigring (hide 1))
 
 
+(define triangolo (with-state (load-primitive (string-append base_dir "obj/triangolo.obj"))))
+(with-primitive triangolo (hide 1))
+;(define pandasimple (with-state (load-primitive (string-append base_dir "obj/pandasimple.obj"))))
+;(with-primitive pandasimple (hide 1))
 
-;(define piramide (with-state (load-primitive (string-append base_dir "obj/piramide.obj"))))
-;(with-primitive piramide (hide 1))
-;(define triangolo (with-state (load-primitive (string-append base_dir "obj/triangolo.obj"))))
-;(with-primitive triangolo (hide 1))
-;;(define pandasimple (with-state (load-primitive (string-append base_dir "obj/pandasimple.obj"))))
-
-;(define piramidi (with-state (load-primitive (string-append base_dir "obj/piramidi.obj"))))
-;(with-primitive piramidi (hide 1))
-;(define triangoli (with-state (load-primitive (string-append base_dir "obj/triangoli.obj"))))
-;(with-primitive triangoli (hide 1))
+(define piramidi (with-state (load-primitive (string-append base_dir "obj/piramidi.obj"))))
+(with-primitive piramidi (hide 1))
+(define triangoli (with-state (load-primitive (string-append base_dir "obj/triangoli.obj"))))
+(with-primitive triangoli (hide 1))
 
 ;(define piramidiring (with-state (load-primitive (string-append base_dir "obj/piramidiring.obj"))))
 ;(with-primitive piramidiring (hide 1))
@@ -77,7 +75,7 @@
 (define BlueLightness 0.25)
 
 ;Define initial tranformation settings
-(define Scale 0.2)
+(define Scale 10)
 (define RotX -60)
 (define RotY 60)
 (define RotZ -60)

@@ -4,7 +4,7 @@
 
 
 ; Base directory
-(define base_dir "/Users/Shared/fluxus/wobblelovers/")
+(define base_dir "/Users/Shared/fluxus/fluxusMapping/")
 
 ; Include general config
 (load (string-append base_dir "lib/config_osx.scm"))

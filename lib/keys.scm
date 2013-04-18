@@ -10,14 +10,14 @@
 	(gain (midi-ccn 1 10))
 	
 	; knob3
-	;(setBlur (midi-ccn 2 10))
+	;(set! baseScale (midi-ccn 2 10))
 	
 	
 	; Fader 1 2 3 RGB
 	(colorSchema (midi-ccn 0 7) (midi-ccn 1 7) (midi-ccn 2 7))
 	
 	; knob3 scale - Fader 456 Rotate
-	(transformSchema baseScale (- (* 36 (midi-ccn 3 7)) 18) (- (* 36 (midi-ccn 4 7)) 18) (- (* 36 (midi-ccn 5 7)) 18))
+	(transformSchema (* baseScale (midi-cc 2 10)) (- (* 36 (midi-ccn 3 7)) 18) (- (* 36 (midi-ccn 4 7)) 18) (- (* 36 (midi-ccn 5 7)) 18))
 	
 )
 
@@ -65,14 +65,14 @@
 
 
 ;(when (key-pressed "z") (shapeSchema bgPlane kube smallring bigring))
-(when (key-pressed "z") (setDecorator decorator decorator2))
+(when (key-pressed "z") (setDecorator bigring))
 
 ;(when (key-pressed "x") (shapeSchema bgPlane triangolisphere triA piramidi))
-(when (key-pressed "x") (setDecorator decorator decorator2))
+(when (key-pressed "x") (setDecorator triangolo))
 
-;(when (key-pressed "c") (shapeSchema bgPlane piramidisphere triB triangoli))
+(when (key-pressed "c") (setDecorator piramidi))
 
-;(when (key-pressed "v") (shapeSchema bgPlane triangolisphere triC piramidiring))
+(when (key-pressed "v") (setDecorator triangoli))
 
 ;(when (key-pressed "b") (shapeSchema bgPlane hexA triangoliring piramidi))
 

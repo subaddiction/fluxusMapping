@@ -18,10 +18,6 @@
 (load (string-append base_dir "lib/functions.scm"))
 
 
-(set-ortho-zoom 10)
-(ortho)
-
-
 ; Fire animations
 (every-frame
     ;(begin (display (midi-peek)) (newline))
